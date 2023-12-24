@@ -25,7 +25,7 @@ jobs:
         with:
           image: umami
           tags: ${{ matrix.db-type }}-${{ inputs.version }}, ${{ matrix.db-type }}-latest
-          buildArgs: DATABASE_TYPE=${{ matrix.db-type }},BASE_PATH=/analytics/
+          buildArgs: DATABASE_TYPE=${{ matrix.db-type }},BASE_PATH=/analytics
           registry: ghcr.io
           multiPlatform: false
           platform: linux/amd64
